@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body id="corpo">
+    <header>
+        Cabeçalho
+    </header>
+    <main>
+        conteudo
+    </main>
+    <footer>
+        <div>
+            <h2>LOGO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident in aspernatur itaque voluptas nobis! Nemo, blanditiis maiores quos eveniet perferendis dolores quisquam similique saepe cumque iure, quasi mollitia suscipit.</p>
+            <ul>
+                <li>
+                    <a href="#!">
+                        <i title=facebook class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i title=instagram class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i title=linkedin class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="#!">
+                        <i title=youtube class="fa-brands fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Acesso rápido</h5>
+            <ul>
+                <li>
+                    <a href="#!">Home</a>
+            </li>
+                <li>
+                    <a href="#!">Sobre nós</a>
+            </li>
+                <li>
+                    <a href="#!">Serviços</a>
+            </li>
+                <li>
+                    <a href="#!">Clientes</a>
+            </li>
+                <li>
+                    <a href="#!">Contato</a>
+            </li>
+            </ul>
+        </div>
+
+        <div>
+            <h5>Assine nossa newsletter</h5>
+            <div class="newsletter">
+                <input type="text">
+                <span>Digite seu melhor e-mail</span>
+                <button><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <div>
+            <h6>&copy; 2023 Todos os direitos reservados.<h6>
+        </div>
+    </footer>
+    <div class="voltar">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <script>
+        let voltar = document.querySelector(".voltar")
+        corpo.onscroll = () => {
+            let rolagem = window.pageYOffset;
+            if(rolagem > 300){
+                voltar.classList.add('active')
+            }else{
+                voltar.classList.remove('active')
+            }
+        }
+    </script>
+</body>
+</html>
